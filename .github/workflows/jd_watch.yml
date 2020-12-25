@@ -25,7 +25,7 @@ jobs:
       - name: npm install
         run: |
           npm install
-      - name: '运行 【进店领豆脚本】'
+      - name: '运行 【看一看脚本】'
         run: |
           node jd_watch.js
         env:
