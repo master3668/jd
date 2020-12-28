@@ -8,20 +8,7 @@
 选中所有请求，将所有请求保存为 JSON Session File 名称为 watch.chlsj，将该文件与jd_watch.js放在相同目录中
 使用手机抓包，将functionId=discAcceptTask的请求填入acceptBody，将discDoTask的body填入doBody
 云端使用：将所抓的两种包使用@符号隔开后，分别填入到WATCH_ACCEPTBODY、WATCH_DOBODY环境变量
-============Quantumultx===============
-[task_local]
-#京东看一看
-10 6 * * * https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_watch.js, tag=京东看一看, enabled=true
 
-================Loon==============
-[Script]
-cron "10 6 * * *" script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_watch.js,tag=京东看一看
-
-===============Surge=================
-京东看一看 = type=cron,cronexp="10 6 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_watch.js
-
-============小火箭=========
-京东看一看 = type=cron,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_watch.js, cronexpr="10 6 * * *", timeout=900, enable=true
  */
 const $ = new Env('京东看一看');
 let acceptBody = [
