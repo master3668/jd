@@ -1,6 +1,6 @@
 /**
 宠汪汪邀请助力与赛跑助力脚本，感谢github@Zero-S1提供帮助
-更新时间：2020-12-16（宠汪汪助力更新Token的配置正则表达式已改）
+更新时间：2021-1-7（宠汪汪助力更新Token的配置正则表达式已改）
 
 token时效很短，几个小时就失效了,闲麻烦的放弃就行
 每天拿到token后，可一次性运行完毕即可。
@@ -44,7 +44,7 @@ let invite_pins = ["tangwj,jd_52ca6ebede2d9,jd_50a7e27f821fa,jd_4d854c9e621c9,jd
 let run_pins = ["tangwj,jd_52ca6ebede2d9,jd_50a7e27f821fa,jd_4d854c9e621c9,jd_445ad83ff7114,jd_4009a82e75a51"];
 // $.LKYLToken = '76fe7794c475c18711e3b47185f114b5' || $.getdata('jdJoyRunToken');
 // $.LKYLToken = $.getdata('jdJoyRunToken');
-const friendsArr = ["tangwj", "jd_52ca6ebede2d9", "jd_50a7e27f821fa", "jd_4d854c9e621c9", "jd_445ad83ff7114", "jd_4009a82e75a51", "13486659225_p", "jd_iFnquhpWWAzO", "jd_6e348ece13e20", "jd_6f5b49bb757cb", "znz传奇", "418001066_m", "jd_67ded5748c3ab", "361372-27819972", "jd_5fafb631c98af", "jd_76dd04e844d63", "小鹿Jenny", "00数字方程式", "jd_77a82b603c6c3", "勇敢的小泪", "jd_4481f68984466", "jd_758f5224ee957", "mwb1992062_m", "15975229552_p", "zdj8341", "pet_virtual_friend_胡皋三", "pet_virtual_friend_绿茶sama", "pet_virtual_friend_Ainio", "jd_4915949b7bfa1", "jd_7ca74ed9224ef", "jd_42764f5ea2341", "5317123-63418293", "jd_40a2d9485cbdb", "qazmcl1230", "jd_7ced325aba4fd", "jd_402fe7425fcaf", "95581245-627991", "luffy-314_m", "jd_BCXgLlmxHdiS", "jd_610b3d00928e5", "你要醒来", "338379384-148135", "pet_virtual_friend_乔治桑", "jd_54130a3e282ea", "jd_6169b3411ed5b", "jd_428d930ca56a5", "qq6924309", "pet_virtual_friend_路遇狗与少年", "jd_712bd3bfd55d6", "jd_4e97fe5ca4003", "tommy_he1", "13981372001_p", "129867657-673064", "jd_525d6e7a57e7c", "wdZuirGekSHKmF", "jd_75e1da74980ab", "jd_RVMXldNSQNOP", "jd_5f94da0265e0d", "jd_67ab629be7e61", "13887490621_p", "jd_4e0d529ba3c35", "jd_493918e314b50", "jd_71a220104187a", "jd_vVhhkdUpTkJQ", "gary388jingdong", "wdjQkAbFobMTyo", "cloud_kim", "jd_558ed75f52d39", "15555448319_p", "wdhxZuEvXhhvCf", "jd_72b940be8c0f4", "congcong炒葱葱", "jd_7eb0de64eb25a", "13209558123_p", "jd_53bf7cb6fb8e6", "jd_4fe620f72fa7c", "夏雨的爱情", "jd_47ba82eb392a5", "jd_LXnFHXoJwXkW", "62160785-578856", "醒醒该睡了", "jd_LOEWgvNwQIWD", "xiiirww", "pet_virtual_friend_特兰克斯", "pet_virtual_friend_Talon", "jd_4f7cd5b108733", "jd_NgNWXMVkJIvk", "jadonglin", "玩家卫弈", "liangxuejingdong", "jd_627171efb7c0a", "jd_53bc7a14f64d6", "15809290902_p", "jd_65a2ab73d9aa5", "jd_6edb943cacbfb", "jd_7f7eabc5caf7d", "jd_725e17effb6a9", "蔡辉煌", "voxb", "gdxx_hhw_m", "jd_78f0d6524a1dc", "jd_sDtnONLeHwfG", "xyyshy1983", "yinlang46", "ypqian", "15817094457_p", "fdxwb", "wuyaoxin2012", "明子溪", "henry1927_m", "chamy99", "jd_461e384274c34", "248358330-645106", "jd_4fd63de4a6033", "蜜糖向日葵", "wonghe", "36453197-121619", "琳琅满目cbb", "jd_5b7cc9e532426", "134795344-89911673", "15211488203_p", "jd_6f1f0722f8365", "jd_JmGCpqgpCtqG", "墨明棋妙陈", "pet_virtual_friend_1314爱澳", "1209815-33190621", "zhouhuayh", "jd_6d3cbb8b0751a", "jd_6e00e826f939b", "jd_704a2e5e28a66", "mztvip", "davidharry", "sara35424", "sun5025", "jd_62ce2385bb364", "352834026-406289", "pet_virtual_friend_丁座的真爱粉", "jd_582eecf8d27a9", "jd_49acdb02e8514", "13976911784_p", "jd_uGzohbhFpRuz", "wzywolfgang", "yjbonny", "沧海不轮回", "649297742_327799447", "倚兰椒", "琳琳8796", "snzh2013", "jd_73751adc04afd", "wdNnlMzPGJJKgqI", "yygt1158", "jd_53df36eb204a0", "花开花花落", "jd_611e082213c89", "jd_71e77d9235cf5", "jd_596fd9fea411f", "jd_7277d200aa1ac", "15230573701_p", "zb19881021", "692620136落", "168876810-159969", "zhushidan100", "上自习的猪", "15602231009_p", "jd_5213fd3fd5e09", "jd_6711f97ee4dfe", "44787591-640051", "MisterGlasses", "jd_7b22bbfe1e7e5", "138555963-81748582", "jd_QEVVkkDTQAlJ", "4932713-24535180", "jd_6dce98c07a644", "jd_DUtPtiiDamDr", "wangyneu", "wBm1TsDy3p_m", "jd_6acd3a6cc79cc","jd_444f5c020f31c","jd_71caf6b3ec4cb", "shin_dynasty", "carola82", "jd_AOhLSBLdSnux", "ningbormb"];
+const friendsArr = ["tangwj,jd_52ca6ebede2d9,jd_50a7e27f821fa,jd_4d854c9e621c9,jd_445ad83ff7114,jd_4009a82e75a51"];
 
 //Node.js用户请在jdCookie.js处填写京东ck;
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
@@ -245,37 +245,41 @@ async function invite(invite_pins) {
   for (let item of invite_pins.map(item => item.trim())) {
     console.log(`\n账号${$.index} [${UserName}] 开始给好友 [${item}] 进行邀请助力`)
     const data = await enterRoom(item);
-    if (!data.success && data.errorCode === 'B0001') {
-      console.log('京东Cookie失效');
-      $.msg($.name, `【提示】京东cookie已失效`, `京东账号${$.index} ${UserName}\n请重新登录获取\nhttps://bean.m.jd.com/`, {"open-url": "https://bean.m.jd.com/"});
-      $.jdLogin = false;
-      break
-    } else {
-      const { helpStatus } = data.data;
-      console.log(`helpStatus ${helpStatus}`)
-      if (helpStatus=== 'help_full') {
-        console.log(`您的邀请助力机会已耗尽\n`)
-        break;
-      } else if (helpStatus=== 'cannot_help') {
-        console.log(`已给该好友 ${item} 助力过或者此friendPin是你自己\n`)
-        continue;
-      } else if (helpStatus=== 'invite_full') {
-        console.log(`助力失败，该好友 ${item} 已经满3人给他助力了,无需您再次助力\n`)
-        continue;
-      } else if (helpStatus=== 'can_help') {
-        console.log(`开始给好友 ${item} 助力\n`)
-        const LKYL_DATA = await helpInviteFriend(item);
-        if (LKYL_DATA.errorCode === 'L0001' && !LKYL_DATA.success) {
-          console.log('来客有礼宠汪汪token失效');
-          $.setdata('', 'jdJoyRunToken');
-          $.msg($.name, '【提示】来客有礼token失效，请重新获取', "微信搜索'来客有礼'小程序\n点击底部的'发现'Tab\n即可获取Token")
-          $.LKYLLogin = false;
+    if (data) {
+      if (data.success) {
+        const { helpStatus } = data.data;
+        console.log(`helpStatus ${helpStatus}`)
+        if (helpStatus=== 'help_full') {
+          console.log(`您的邀请助力机会已耗尽\n`)
+          break;
+        } else if (helpStatus=== 'cannot_help') {
+          console.log(`已给该好友 ${item} 助力过或者此friendPin是你自己\n`)
+          continue;
+        } else if (helpStatus=== 'invite_full') {
+          console.log(`助力失败，该好友 ${item} 已经满3人给他助力了,无需您再次助力\n`)
+          continue;
+        } else if (helpStatus=== 'can_help') {
+          console.log(`开始给好友 ${item} 助力\n`)
+          const LKYL_DATA = await helpInviteFriend(item);
+          if (LKYL_DATA.errorCode === 'L0001' && !LKYL_DATA.success) {
+            console.log('来客有礼宠汪汪token失效');
+            $.setdata('', 'jdJoyRunToken');
+            $.msg($.name, '【提示】来客有礼token失效，请重新获取', "微信搜索'来客有礼'小程序\n点击底部的'发现'Tab\n即可获取Token")
+            $.LKYLLogin = false;
+            break
+          } else {
+            $.LKYLLogin = true;
+          }
+        }
+        $.jdLogin = true;
+      } else {
+        if (data.errorCode === 'B0001') {
+          console.log('京东Cookie失效');
+          $.msg($.name, `【提示】京东cookie已失效`, `京东账号${$.index} ${UserName}\n请重新登录获取\nhttps://bean.m.jd.com/`, {"open-url": "https://bean.m.jd.com/"});
+          $.jdLogin = false;
           break
-        } else {
-          $.LKYLLogin = true;
         }
       }
-      $.jdLogin = true;
     }
   }
   // if ($.inviteReward > 0) {
@@ -286,18 +290,20 @@ function enterRoom(invitePin) {
   return new Promise(resolve => {
     headers.Cookie = cookie;
     headers.LKYLToken = $.LKYLToken;
+    headers['Content-Type'] = "application/json";
     const options = {
-      url: `${JD_BASE_API}/enterRoom?reqSource=weapp&invitePin=${encodeURI(invitePin)}`,
+      url: `${JD_BASE_API}/enterRoom/h5?reqSource=weapp&invitePin=${encodeURI(invitePin)}&inviteSource=task_invite&shareSource=weapp&inviteTimeStamp=${Date.now()}`,
+      body: '{}',
       headers
     }
-    $.get(options, (err, resp, data) => {
+    $.post(options, (err, resp, data) => {
       try {
         if (err) {
-          $.log('API请求失败')
-          $.logErr(JSON.stringify(err));
+          $.log(`${$.name} API请求失败`)
+          $.log(JSON.stringify(err))
         } else {
-          data = JSON.parse(data);
           // console.log('进入房间', data)
+          data = JSON.parse(data);
         }
       } catch (e) {
         $.logErr(e, resp)
