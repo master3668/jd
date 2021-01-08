@@ -38,7 +38,7 @@ const JD_BASE_API = `https://draw.jdfcloud.com//pet`;
 let invite_pins = ["tangwj,jd_52ca6ebede2d9,jd_50a7e27f821fa,jd_4d854c9e621c9,jd_445ad83ff7114,jd_4009a82e75a51"];
 //下面给出好友赛跑助力的示例填写规则
 let run_pins = ["tangwj,jd_52ca6ebede2d9,jd_50a7e27f821fa,jd_4d854c9e621c9,jd_445ad83ff7114,jd_4009a82e75a51"];
-// $.LKYLToken = '76fe7794c475c18711e3b47185f114b5' || $.getdata('jdJoyRunToken');
+// $.LKYLToken = '48e998e447fcf73aa7ba41b3838b36bf' || $.getdata('jdJoyRunToken');
 // $.LKYLToken = $.getdata('jdJoyRunToken');
 const friendsArr = ["tangwj,jd_52ca6ebede2d9,jd_50a7e27f821fa,jd_4d854c9e621c9,jd_445ad83ff7114,jd_4009a82e75a51"];
 
