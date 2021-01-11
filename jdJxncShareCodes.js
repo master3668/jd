@@ -9,8 +9,12 @@
 // 同一个京东账号的好友助力码用@符号隔开,不同京东账号之间用&符号或者换行隔开,下面给一个示例
 // 如: 京东账号1的shareCode1@京东账号1的shareCode2&京东账号2的shareCode1@京东账号2的shareCode2
 let JxncShareCodes = [
-  '',//账号一的好友shareCode,不同好友中间用@符号隔开
-  '',//账号二的好友shareCode，不同好友中间用@符号隔开
+  'db66c9a9be3e57c881da2f186ac715b0@db0dbe4a5e2291914469e11e029c4855@68c08c61e1c0204d8eed1b8c70c53ab6',//账号一的好友shareCode,不同好友中间用@符号隔开
+  'b3f4909e32c3c66dce6871793a4d7a56@db0dbe4a5e2291914469e11e029c4855@68c08c61e1c0204d8eed1b8c70c53ab6',//账号二的好友shareCode，不同好友中间用@符号隔开
+  'b3f4909e32c3c66dce6871793a4d7a56@db66c9a9be3e57c881da2f186ac715b0@db0dbe4a5e2291914469e11e029c4855@68c08c61e1c0204d8eed1b8c70c53ab6',
+  'b3f4909e32c3c66dce6871793a4d7a56@db66c9a9be3e57c881da2f186ac715b0@68c08c61e1c0204d8eed1b8c70c53ab6',
+  'b3f4909e32c3c66dce6871793a4d7a56@db66c9a9be3e57c881da2f186ac715b0@db0dbe4a5e2291914469e11e029c4855',
+  'b3f4909e32c3c66dce6871793a4d7a56@db66c9a9be3e57c881da2f186ac715b0@db0dbe4a5e2291914469e11e029c4855'
 ]
 // 判断github action里面是否有京喜农场助力码
 if (process.env.JXNCSHARECODES) {
