@@ -6,7 +6,7 @@ name: jd_plantBean
 on:
   workflow_dispatch:
   schedule:
-    - cron: '16,46 0-23/1 * * *'
+    - cron: '20,40 0-23 * * *'
   watch:
     types: started
   repository_dispatch:
