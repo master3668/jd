@@ -26,12 +26,12 @@ let cookiesArr = [], cookie = '', message;
 let helpAuthor = true;
 const randomCount = $.isNode() ? 20 : 5;
 const inviteCodes = [
-  ``,
-  ``,
-  ``,
-  ``,
-  ``,
-  ``,
+  `eU9Yae7hN_pzozuBnnFH3w@eU9YaezjYakk9jjdyXJFhw@eU9YaLi6Y_h1-DvTyXJA3w@eU9YaOi3N6gu8jiDzHIS0g@eU9YaOyyb60u8zvSziIW1w`,
+  `Z0ppO6vo@eU9YaezjYakk9jjdyXJFhw@eU9YaLi6Y_h1-DvTyXJA3w@eU9YaOi3N6gu8jiDzHIS0g@eU9YaOyyb60u8zvSziIW1w`,
+  `Z0ppO6vo@eU9Yae7hN_pzozuBnnFH3w@eU9YaLi6Y_h1-DvTyXJA3w@eU9YaOi3N6gu8jiDzHIS0g@eU9YaOyyb60u8zvSziIW1w`,
+  `Z0ppO6vo@eU9Yae7hN_pzozuBnnFH3w@eU9YaezjYakk9jjdyXJFhw@eU9YaOi3N6gu8jiDzHIS0g@eU9YaOyyb60u8zvSziIW1w`,
+  `Z0ppO6vo@eU9Yae7hN_pzozuBnnFH3w@eU9YaezjYakk9jjdyXJFhw@eU9YaLi6Y_h1-DvTyXJA3w@eU9YaOyyb60u8zvSziIW1w`,
+  `Z0ppO6vo@eU9Yae7hN_pzozuBnnFH3w@eU9YaezjYakk9jjdyXJFhw@eU9YaLi6Y_h1-DvTyXJA3w@eU9YaOi3N6gu8jiDzHIS0g`,
 ]
 if ($.isNode()) {
   Object.keys(jdCookieNode).forEach((item) => {
