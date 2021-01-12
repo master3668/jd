@@ -34,7 +34,14 @@ let tokenNull = {'farm_jstoken': '', 'phoneid': '', 'timestamp': ''}; // 内置�
 let tokenArr = []; // 用户 token 数组
 let currentToken = {}; // 当前用户 token
 const shareCode = '68c08c61e1c0204d8eed1b8c70c53ab6@b3f4909e32c3c66dce6871793a4d7a56@db66c9a9be3e57c881da2f186ac715b0@db0dbe4a5e2291914469e11e029c4855'; // 内置助力码
-let jxncShareCodeArr = []; // 用户 助力码 数组
+let jxncShareCodeArr = [
+ 'db66c9a9be3e57c881da2f186ac715b0@db0dbe4a5e2291914469e11e029c4855@db0dbe4a5e2291914469e11e029c4855@68c08c61e1c0204d8eed1b8c70c53ab6@eb2eea2b7a0cc84ca88085e8ce9f1444',
+ 'b3f4909e32c3c66dce6871793a4d7a56@db0dbe4a5e2291914469e11e029c4855@db0dbe4a5e2291914469e11e029c4855@68c08c61e1c0204d8eed1b8c70c53ab6@eb2eea2b7a0cc84ca88085e8ce9f1444',
+ 'b3f4909e32c3c66dce6871793a4d7a56@db66c9a9be3e57c881da2f186ac715b0@db0dbe4a5e2291914469e11e029c4855@68c08c61e1c0204d8eed1b8c70c53ab6@eb2eea2b7a0cc84ca88085e8ce9f1444',
+ 'b3f4909e32c3c66dce6871793a4d7a56@db66c9a9be3e57c881da2f186ac715b0@db0dbe4a5e2291914469e11e029c4855@68c08c61e1c0204d8eed1b8c70c53ab6@eb2eea2b7a0cc84ca88085e8ce9f1444',
+ 'b3f4909e32c3c66dce6871793a4d7a56@db66c9a9be3e57c881da2f186ac715b0@db0dbe4a5e2291914469e11e029c4855@db0dbe4a5e2291914469e11e029c4855@eb2eea2b7a0cc84ca88085e8ce9f1444',
+ 'b3f4909e32c3c66dce6871793a4d7a56@db66c9a9be3e57c881da2f186ac715b0@db0dbe4a5e2291914469e11e029c4855@db0dbe4a5e2291914469e11e029c4855@68c08c61e1c0204d8eed1b8c70c53ab6'
+]; // 用户 助力码 数组
 let currentShareCode = []; // 当前用户 要助力的助力码
 const openUrl = `openjd://virtual?params=${encodeURIComponent('{ "category": "jump", "des": "m", "url": "https://wqsh.jd.com/sns/201912/12/jxnc/detail.html?ptag=7155.9.32&smp=b47f4790d7b2a024e75279f55f6249b9&active=jdnc_1_chelizi1205_2"}',)}`; // 打开京喜农场
 let subTitle = '', message = '', option = {'open-url': openUrl}; // 消息副标题，消息正文，消息扩展参数
