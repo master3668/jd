@@ -6,7 +6,7 @@ name: getJDCookie
 on:
   workflow_dispatch:
   schedule:
-    - cron: '2 59 * * *'
+    - cron: '2 23 * * *'
   watch:
     types: started
   repository_dispatch:
