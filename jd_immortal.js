@@ -12,13 +12,7 @@ boxjs IMMORTAL_LATLON
  */
 const $ = new Env('京东神仙书院');
 let cookiesArr = [], cookie = '', message;
-if ($.isNode()) {
-  Object.keys(jdCookieNode).forEach((item) => {
-    cookiesArr.push(jdCookieNode[item])
-  })
-  if (process.env.JD_DEBUG && process.env.JD_DEBUG === 'false') console.log = () => {};
-} else {
-  let cookiesData = $.getdata('CookiesJD') || "[]";
+let cookiesData = $.getdata('CookiesJD') || "[]";
   cookiesData = jsonParse(cookiesData);
   cookiesArr = cookiesData.map(item => item.cookie);
   cookiesArr.reverse();
