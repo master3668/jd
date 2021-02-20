@@ -287,8 +287,17 @@ function enterRoom(invitePin) {
     headers.Cookie = cookie;
     headers.LKYLToken = $.LKYLToken;
     headers['Content-Type'] = "application/json";
+    let opt = {
+      // url: "//jdjoy.jd.com/common/pet/getPetTaskConfig?reqSource=h5",
+      url: `//draw.jdfcloud.com/common/pet/enterRoom/h5?reqSource=h5&invitePin=${encodeURI(invitePin)}&inviteSource=task_invite&shareSource=weapp&inviteTimeStamp=${Date.now()}`,
+      method: "GET",
+      data: {},
+      credentials: "include",
+      header: {"content-type": "application/json"}
+    }
+    const url = "https:"+ taroRequest(opt)['url']
     const options = {
-      url: `${JD_BASE_API}/enterRoom/h5?reqSource=weapp&invitePin=${encodeURI(invitePin)}&inviteSource=task_invite&shareSource=weapp&inviteTimeStamp=${Date.now()}`,
+      url,
       body: '{}',
       headers
     }
@@ -313,8 +322,17 @@ function helpInviteFriend(friendPin) {
   return new Promise((resolve) => {
     headers.Cookie = cookie;
     headers.LKYLToken = $.LKYLToken;
+    let opt = {
+      // url: "//jdjoy.jd.com/common/pet/getPetTaskConfig?reqSource=h5",
+      url: `//draw.jdfcloud.com/common/pet/helpFriend?friendPin=${encodeURI(friendPin)}&reqSource=h5`,
+      method: "GET",
+      data: {},
+      credentials: "include",
+      header: {"content-type": "application/json"}
+    }
+    const url = "https:"+ taroRequest(opt)['url']
     const options = {
-      url: `${JD_BASE_API}/helpFriend?friendPin=${encodeURI(friendPin)}`,
+      url,
       headers
     }
     $.get(options, (err, resp, data) => {
@@ -371,8 +389,17 @@ function combatHelp(friendPin) {
   return new Promise(resolve => {
     headers.Cookie = cookie;
     headers.LKYLToken = $.LKYLToken;
+    let opt = {
+      // url: "//jdjoy.jd.com/common/pet/getPetTaskConfig?reqSource=h5",
+      url: `//draw.jdfcloud.com/common/pet/combat/help?friendPin=${encodeURI(friendPin)}&reqSource=h5`,
+      method: "GET",
+      data: {},
+      credentials: "include",
+      header: {"content-type": "application/json"}
+    }
+    const url = "https:"+ taroRequest(opt)['url']
     const options = {
-      url: `${JD_BASE_API}/combat/help?friendPin=${encodeURI(friendPin)}`,
+      url,
       headers
     }
     $.get(options, (err, resp, data) => {
@@ -401,8 +428,17 @@ function combatDetail(invitePin) {
   return new Promise(resolve => {
     headers.Cookie = cookie;
     headers.LKYLToken = $.LKYLToken;
+    let opt = {
+      // url: "//jdjoy.jd.com/common/pet/getPetTaskConfig?reqSource=h5",
+      url: `//draw.jdfcloud.com/common/pet/combat/detail/v2?help=true&inviterPin=${encodeURI(invitePin)}&reqSource=h5`,
+      method: "GET",
+      data: {},
+      credentials: "include",
+      header: {"content-type": "application/json"}
+    }
+    const url = "https:"+ taroRequest(opt)['url']
     const options = {
-      url: `${JD_BASE_API}/combat/detail/v2?help=true&inviterPin=${encodeURI(invitePin)}`,
+      url,
       headers
     }
     $.get(options, (err, resp, data) => {
